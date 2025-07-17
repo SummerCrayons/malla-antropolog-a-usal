@@ -1,20 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Antropología - USAL</title>
+  <title>Malla Curricular Antropología - USAL</title>
   <link rel="stylesheet" href="style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
 </head>
 <body>
-  <h1>Malla Curricular - Antropología USAL</h1>
+  <h1>Malla Curricular – Grado en Antropología (USAL)</h1>
+  <p>Visualización general por semestres y relación entre asignaturas clave.</p>
 
-  <div class="semester">
-    <h2>1º Año - 1º Semestre</h2>
-    <ul>
-      <li class="course">Introducción a la Antropología (6 ECTS)</li>
-      <li class="course">Métodos de Investigación Social (6 ECTS)</li>
-    </ul>
-  </div>
-  <script src="script.js"></script>
+  <div class="mermaid">
+graph TD
+  %% PRIMER CURSO
+  A1[1ºS Introducción a la Antropología]
+  A2[1ºS Introducción a la Sociología]
+  A3[1ºS Historia del Mundo Contemporáneo]
+  A4[1ºS Métodos en Antropología]
+  A5[1ºS Evolución Humana]
+
+  B1[2ºS Geografía Humana]
+  B2[2ºS Teorías Antropológicas]
+  B3[2ºS Métodos Cualitativos]
+  B4[2ºS Introduction to Economics]
+  B5[2ºS Political Science]
+
+  %% SEGUNDO CURSO
+  C1[3ºS General Linguistics]
+  C2[3ºS Bases Biológicas del Comportamiento]
+  C3[3ºS Antropología del Parentesco]
+  C4[3ºS Antropología Política]
+  C5[3ºS Técnicas Cuantitativas]
+
+  D1[4ºS Bases Filosóficas]
+  D2[4ºS Bases Psicosociales]
+  D3[4ºS Lingüística Antropológica]
+  D4[4ºS Antropología Económica]
+  D5[4ºS Laboratorio Audiovisual]
+
+  %% TERCER CURSO
+  E1[5ºS Arqueología: Métodos y Técnicas]
+  E2[5ºS Rituales y Religiones]
+  E3[5ºS Ecología Cultural]
+  E4[5ºS Antropología Histórica]
+  E5[5ºS Antropología Aplicada]
+
+  F1[6ºS Arqueología: Teoría]
+  F2[6ºS Antropología de Género]
+  F3[6ºS Antropología Médica]
+  F4[6ºS Políticas Públicas]
+  F5[6ºS Cognición y Simbolismo]
+
+  %% CUARTO CURSO
+  G1[7ºS Laboratorio Etnográfico]
+  G2[7ºS Ética Profesional]
+  G3[7ºS Antropología de Iberoamérica]
+
+  H1[8ºS Antropología del Desarrollo]
+  H2[8ºS Trabajo de Fin de Grado]
+
+  %% Relaciones
+  A1 --> B2
+  A4 --> B3
+  A5 --> C2
+  C3 --> D3
+  C4 --> D4
+  D5 --> E1
+  E1 --> F1
+  E2 --> F2
+  E5 --> F4
+  F5 --> G1
+  G1 --> H2
+  G2 --> H2
+  G3 --> H1
+</div>
+
+  <footer>
+    <p>Universidad de Salamanca · Facultad de Ciencias Sociales</p>
+  </footer>
 </body>
 </html>
