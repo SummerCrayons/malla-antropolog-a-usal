@@ -1,28 +1,44 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
-  padding: 2rem;
-  color: #222;
+  padding: 2em;
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #222;
 }
 
-.mermaid {
-  background: #ffffff;
-  padding: 1.5rem;
+.semester {
+  background: #fff;
+  padding: 1.5em;
   border-radius: 10px;
-  margin: 2rem auto;
-  max-width: 900px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-footer {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.course {
+  cursor: pointer;
+  padding: 0.5em;
+  border-left: 5px solid #ccc;
+  margin: 0.3em 0;
+  background-color: #fafafa;
+  transition: all 0.2s ease;
+}
+
+.course:hover {
+  background-color: #e8f5e9;
+}
+
+.course.aprobado {
+  text-decoration: line-through;
+  color: green;
+  font-weight: bold;
+  border-left-color: green;
 }
