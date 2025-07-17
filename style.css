@@ -15,3 +15,8 @@ body {
 .course {
   margin-left: 1em;
 }
+.aprobado {
+  text-decoration: line-through;
+  color: green;
+  font-weight: bold;
+}
