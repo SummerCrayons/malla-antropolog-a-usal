@@ -4,17 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   cursos.forEach(curso => {
     const id = curso.dataset.id;
 
-    // Recuperar estado guardado en localStorage
+    // Recuperar estado guardado
     if (localStorage.getItem(id) === 'true') {
       curso.classList.add('aprobado');
     }
 
     curso.addEventListener('click', () => {
       curso.classList.toggle('aprobado');
-
-      // Guardar o eliminar del localStorage
-      const estaAprobado = curso.classList.contains('aprobado');
-      localStorage.setItem(id, estaAprobado);
+      localStorage.setItem(id, curso.classList.contains('aprobado'));
     });
   });
 });
