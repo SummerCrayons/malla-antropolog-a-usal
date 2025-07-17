@@ -1,44 +1,62 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
+  padding: 2rem;
   margin: 0;
-  padding: 2em;
+  color: #333;
 }
 
 h1 {
   text-align: center;
-  color: #222;
+  color: #800080;
+}
+
+h2, h3 {
+  color: #a052a0;
+  text-align: center;
+}
+
+.year {
+  margin-bottom: 3rem;
 }
 
 .semester {
-  background: #fff;
-  padding: 1.5em;
-  border-radius: 10px;
-  margin-bottom: 2em;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #ffe6f0;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(128, 0, 128, 0.1);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .course {
+  background-color: #fbeaff;
+  border-left: 6px solid #d96dd8;
+  padding: 1rem;
+  border-radius: 10px;
   cursor: pointer;
-  padding: 0.5em;
-  border-left: 5px solid #ccc;
-  margin: 0.3em 0;
-  background-color: #fafafa;
   transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 .course:hover {
-  background-color: #e8f5e9;
+  background-color: #f2ccfa;
 }
 
 .course.aprobado {
   text-decoration: line-through;
-  color: green;
-  font-weight: bold;
-  border-left-color: green;
+  background-color: #d1ffd8;
+  border-left-color: #4caf50;
+  color: #2e7d32;
+}
+
+.course.op {
+  background-color: #fdd8ee;
+  border-left-color: #ff80c0;
 }
